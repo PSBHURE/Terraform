@@ -8,7 +8,7 @@ resource "aws_vpc" "myapp_vpc" {
 
 resource "aws_subnet" "pub_subnet" {
   vpc_id = aws_vpc.myapp_vpc.id
-  cidr_block = "20.20.1.0/24"
+  cidr_block = var.pub_subnet_cidr
   tags = {
     Name = "Public-Subnet"
   }
@@ -16,7 +16,7 @@ resource "aws_subnet" "pub_subnet" {
 
 resource "aws_subnet" "prv_subnet" {
   vpc_id = aws_vpc.myapp_vpc.id
-  cidr_block = "20.20.2.0/24"
+  cidr_block = var.pri_subnet_cidr
   tags = {
     Name = "Private-Subnet"
   }
