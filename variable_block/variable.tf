@@ -17,3 +17,12 @@ variable "pri_subnet_cidr" {
   type = string
   default = "10.20.2.0/24"
 }
+
+variable "pub_subnet_tags" {
+  type = map(string)
+  default = {
+    "Name"        = "Public-Subnet"
+    "Description" = "XYZ"
+    "CostCenter"  = "C123455"
+  }
+}
