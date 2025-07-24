@@ -1,0 +1,9 @@
+variable "vpc_name" {
+  type = string
+  default = "DEV-APP-VPC"    #if this default vlue not provided and there is no initialization of variable in .tfvar file then it will ask you input at time of "terraform plan"
+}
+
+variable "vpc_cidr" {
+  type = string
+  default = "10.20.0.0/16"   #if this default vlue not provided and there is no initialization of variable in .tfvar file then it will ask you input at time of "terraform plan"
+}
