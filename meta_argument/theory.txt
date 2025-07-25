@@ -1,0 +1,7 @@
+There are 4 meta arguments are in terraform
+1]count
+    when we use use count as meta we need to use "Splat Expressions" because now more than one parameters will return then we need to catch them.
+2]depends-on
+    It is list of string "list(string)"  w/o creation of depend on resouce our current resource will not create.
+3]for_each
+4]providers

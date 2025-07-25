@@ -9,5 +9,6 @@ terraform {
 }
 
 provider "aws" {
+  alias = "south-1"
   region = "ap-south-1"
 }
